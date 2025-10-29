@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>studio SEVEN17</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--text:#171717;--muted:#555;--bg:#fff;--panel:rgba(255,255,255,.9);--max:1140px;}
+  *{box-sizing:border-box} html,body{margin:0;padding:0}
+  body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+  .site_header{position:sticky;top:0;z-index:50;background:#ffffffea;backdrop-filter:saturate(1.2) blur(6px);border-bottom:1px solid #eaeaea}
+  .nav_inner{max-width:var(--max);margin:0 auto;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+  .brand{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:20px;letter-spacing:.2px}
+  .nav_links a{text-decoration:none;color:var(--text);margin-left:28px;font-size:15px;font-weight:500}
+  .nav_links a:hover{opacity:.7}
+  .hero{position:relative;min-height:78vh;width:100%;display:grid;place-items:center;overflow:hidden}
+  .hero_img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+  .hero_overlay{position:relative;z-index:1;width:min(820px,88vw);background:var(--panel);border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.15);padding:40px 32px;text-align:center}
+  .hero_overlay h1{margin:0 0 10px 0;font-family:"Cormorant Garamond",serif;font-weight:600;font-size:clamp(36px,4.2vw,56px);line-height:1.15;letter-spacing:.3px}
+  .hero_overlay p{margin:8px auto 0;font-size:16px;color:#333;max-width:620px}
+  .section{padding:84px 20px}
+  .container{max-width:var(--max);margin:0 auto}
+  .section_title{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:clamp(32px,3.6vw,48px);text-align:center;margin:0 0 28px 0}
+  .lead{text-align:center;color:var(--muted);max-width:980px;margin:0 auto 56px;font-size:18px}
+  .features{display:grid;gap:34px;grid-template-columns:repeat(3,1fr)}
+  @media (max-width:900px){.features{grid-template-columns:1fr}}
+  .feature{text-align:center;padding:0 18px}
+  .feature h3{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:26px;margin:0 0 12px 0}
+  .feature p{margin:0;color:#3f3f3f}
+  .contact{background:#f7f7f7;text-align:center}
+  .email{font-size:22px;margin-top:8px}
+  .footer{border-top:1px solid #eee;text-align:center;padding:26px 16px;color:#444;font-family:"Cormorant Garamond",serif;font-size:20px}
+  html{scroll-behavior:smooth}
+</style>
+</head>
+<body>
+  <header class="site_header">
+    <div class="nav_inner">
+      <div class="brand">studio SEVEN17</div>
+      <nav class="nav_links">
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" aria-label="Hero">
+    <img class="hero_img" alt="Coastal luxury living room" src="assets/images/hero-coastal.jpg" />
+    <div class="hero_overlay">
+      <h1>studio SEVEN17</h1>
+      <p><em>Online interior design services including virtual consultations, space planning, and furniture and décor selection for residential and commercial interiors.</em></p>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section_title">About Our Services</h2>
+      <p class="lead">
+        At studio SEVEN17, we believe exceptional interior design should be accessible to everyone.
+        Our online design services bring professional expertise directly to you, wherever you are.
+      </p>
+      <div class="features">
+        <div class="feature">
+          <h3>Virtual Consultations</h3>
+          <p>Connect with our experienced designers through personalized video consultations to discuss your vision and requirements.</p>
+        </div>
+        <div class="feature">
+          <h3>Space Planning</h3>
+          <p>Optimize your space with expertly crafted floor plans and layouts that maximize both function and beauty.</p>
+        </div>
+        <div class="feature">
+          <h3>Furniture &amp; Décor Selection</h3>
+          <p>Receive curated recommendations for furniture, lighting, and décor that perfectly complement your style and budget.</p>
+        </div>
+      </div>
+      <p class="lead" style="margin-top:46px">
+        Whether you're refreshing a single room or designing an entire home or commercial space,
+        our team works collaboratively with you to create environments that reflect your unique personality and lifestyle.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section_title">Get In Touch</h2>
+      <div class="email">georgitribe@gmail.com</div>
+    </div>
+  </section>
+
+  <footer class="footer">studio SEVEN17</footer>
+</body>
+</html>
